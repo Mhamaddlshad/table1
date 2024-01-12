@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <link rel="stylesheet" href="table.css" />
+  </head>
+  <body>
+    <div>
+      <label for="myName">Name:</label><br />
+      <input
+        type="text"
+        id="myName"
+        placeholder="Enter Your Name"
+        class="inputContainer"
+      /><br /><br />
+      <label for="myEmail">Email:</label><br />
+      <input
+        type="email"
+        id="myEmail"
+        placeholder="Enter Your Email"
+        class="inputContainer"
+      /><br /><br />
+      <label for="myAge">Age:</label><br />
+      <input
+        type="number"
+        id="myAge"
+        placeholder="Enter Your Age"
+        class="inputContainer"
+      /><br /><br />
+      <button onclick="input()" id="submit">Add Data</button>
+      <br />
+    </div>
+    <br />
+    <div id="successMessage" style="display: none">
+      <span onclick="Message()" class="close-icon">&times;</span>
+      successfully!
+    </div>
+
+    <div>
+      <table id="myTable" border="1px">
+        <tr>
+          <td id="nameHeading" class="headings"><b>Name</b></td>
+          <td id="emailHeading" class="headings"><b>Email</b></td>
+          <td id="ageHeading" class="headings"><b>Age</b></td>
+        </tr>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <script src="table.js"></script>
+  </body>
+</html>
